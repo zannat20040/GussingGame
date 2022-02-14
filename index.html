@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="guessing-game">
+        <div class="front-page">
+            <div class="front-img">
+                <img src="./question.png" alt="" />
+            </div>
+            <div class="front-text">
+                <h1>Guessing Game</h1>
+                <p>
+                    You just need to chose the right number from the option. If your
+                    guess is right more than wrong , you will win otherwise you will
+                    fail!  Let's see how good your sixth sense is!!!
+                </p>
+                <button class="play">Let's play</button>
+            </div>
+        </div>
+        <div class="levelpg hidden visiblepg">
+            <h1>Game level</h1>
+            <button class="easy" onclick="startGame('easy')">Easy</button>
+            <button class="medium" onclick="startGame('medium')">Medium</button>
+            <button class="hard" onclick="startGame('hard')">Hard</button>
+            <button class="startbtn"><i class="fas fa-play-circle"></i></button>
+        </div>
+        <div class="maingame visiblepg hidden">
+            <p class="gamepagecount">1</p>
+            <p class="gametext">Guess the number you think is right</p>
+            <div class="numberbtn" id="numbrbtn"></div>
+            <button class="nextbtn">Next</button>
+        </div>
+        <div class="resultpage levelpg hidden visiblepg">
+            <img src="" alt="" />
+            <h1></h1>
+            <div class="score"></div>
+            <button class="backhome">Home</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
